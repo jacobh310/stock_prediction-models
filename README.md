@@ -1,9 +1,9 @@
 # Machine Learning model building for Stock Price Predictions  
 ---
 ### Overview   
-In this repo I am going to be building models for a variety of machine learning algorithm. Each direcetory 
-is going to focus on a seperate ML algorithim. Inside each folder they're will be a requirements.txt file 
-with the require dependencies 
+In this repo I am going to be building stock prediction models for a variety of machine learning algorithms. Each direcetory 
+is going to focus on a seperate ML algorithim. Each direcotry will have a README.md summarizing the findings along with a requirements.txt file 
+with the required dependencies 
 
 ### Resources
 
