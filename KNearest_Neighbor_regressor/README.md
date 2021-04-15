@@ -34,17 +34,19 @@ To simplify my model, it will only predict the percent change. Then a postive pe
 - The Precison vs Recall curve shows that a threshold a little bit higher than a percent change of 0 would actually have a higher precision without sacrificing to to much recall when compared to the 0 percent change threshold
 
 ## Profit Loss/Evluation
-- I built an algorithim to simulate real life trades with $100. I will be testing out different thresholds and Risk Return ratios to test if the model can be used in a viable trading strategy
+- I built an algorithim to simulate real life trades with $10000. I will be testing out different thresholds and Risk Return ratios to test if the model can be used in a viable trading strategy
 - Thresholds being what my model considers a buy signal. Normally the thresh old is 0.0%. Anything above 0 indicates a postive percent change or a buy signal. Anything below 0.0% is a nagative percent change or a pass signal.
 - I also implemeneted the maximum short capital gains tax in the algorithim
-![Alt text](https://github.com/jacobh310/stock_prediction-models/blob/master/KNearest_Neighbor_regressor/images/profit_loss.JPG?raw=true "Sentiment")
+- The model will be comapared to investing $10000 into SPY over the same period of time
+![Alt text](https://github.com/jacobh310/stock_prediction-models/blob/master/KNearest_Neighbor_regressor/images/profit_lossJPG.JPG?raw=true "Sentiment")
 - Max Profit: $14400.62
 - Best threshold:0.17%
 - Model return: 44.01%
 
 - SPY gain: 33.42% 
-- SPY Equity: $13341.61
-- Duration: 3.95 Years
+- SPY Investmet: $13341.61
+
+The testing data shows that even with the high taxes the SPY trading strategy with the KNN model was more lucrative that investing $10000 into SPY
 
 ## Test (Holdout Validation)
 - Model Precsion:56.97%
@@ -52,12 +54,13 @@ To simplify my model, it will only predict the percent change. Then a postive pe
 
 - Profit Before Taxes: $13489.78
 - Profit post Max Taxes: $12079.90
-- SPY buy and hold equity: $13871.05
-- 
+- SPY Investment: $13871.05
+
+
 ## Conclusion
 It does not make statistical finincial sense to deploy the final model with how poorly it performed on the test data. I will say that the test data included the stock market crash of March 2021. Given that market crashes do not happen very often it is impractical to think any machine learning algorithim has enough data to do well in those market conditions.
 
-Future work
+## Future work
 I can develop a filter or bias where the model is only allowed to trade in certain market conditions. For example, only training the model on data that is above the 150 moving average. If there is a rapid drop in price below the 150 moving average the bot would not enter trades.
 There are also a plethora of other indicators and metrics that can be combined.
 
