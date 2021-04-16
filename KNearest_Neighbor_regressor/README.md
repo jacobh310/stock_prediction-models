@@ -1,8 +1,9 @@
 # KNearest Neighbors SPY Price Direction Model
 ---
 #### At a glance
-- Machine Learning Project aimed to make a model that can predict the the direction of the SPY etf price on the next trading day
-
+- Machine Learning Project aimed to make a model that can predict the the direction of the SPY etf price on the next trading day  
+  
+Checkout the Web App: https://knn-stock-predictor.herokuapp.com/
 
 ## Introduction
 
